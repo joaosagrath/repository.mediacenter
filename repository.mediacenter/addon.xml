@@ -2,8 +2,8 @@
 <addon id="repository.mediacenter" name="Media Center Repository" version="1.0" provider-name="joaosagrath">
     <extension point="xbmc.addon.repository" name="Media Center Repository">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/joaosagrath/repository.mediacenter/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/joaosagrath/repository.mediacenter/master/addons.xml.md5</checksum>
+            <info compressed="false">https://raw.githubusercontent.com/joaosagrath/repository.mediacenter/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/joaosagrath/repository.mediacenter/master/repo/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/joaosagrath/repository.mediacenter/master/zips/</datadir>
         </dir>
     </extension>
