@@ -26,6 +26,26 @@
 			<news>See changelog.txt file in https://github.com/Wintermute0110/plugin.program.AEL for information about the latest release.</news>
 		</extension>
 	</addon>
+	<addon id="plugin.program.chrome.launcher" name="Chrome Launcher" provider-name="Jani (@rasjani) Mikkonen" version="1.2.0">
+		<requires>
+			<import addon="xbmc.python" version="2.24.0"/>
+			<import addon="xbmc.addon" version="16.0.0"/>
+		</requires>
+		<extension library="default.py" point="xbmc.python.pluginsource">
+			<provides>executable</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+			<summary lang="en">Launch websites via Chrome in Kiosk-mode</summary>
+			<language/>
+			<description lang="en">Launch websites via Chrome in Kiosk-mode</description>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+			<source>https://github.com/rasjani/plugin.program.chrome.launcher</source>
+			<forum>http://forum.kodi.tv/showthread.php?tid=170965</forum>
+			<website>https://www.google.com/chrome</website>
+			<email>jani dot mikkonen at gmail.com</email>
+		</extension>
+	</addon>
 	<addon id="plugin.program.newsstand" name="NewsStand" provider-name="Sagrath" version="0.0.1-alpha">
 		<requires>
 			<import addon="xbmc.python" version="3.0.0"/>
@@ -93,7 +113,7 @@
 			<description lang="zh_TW">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
 		</extension>
 	</addon>
-	<addon id="skin.mediacenter" name="Media Center" provider-name="Joao Sagrath" version="0.0.1">
+	<addon id="skin.mediacenter" name="Media Center" provider-name="Joao Sagrath" version="0.0.2">
 		<requires>
 			<import addon="xbmc.gui" version="5.15.0"/>
 		</requires>
