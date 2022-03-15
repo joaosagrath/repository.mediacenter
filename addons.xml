@@ -26,7 +26,7 @@
 			<news>See changelog.txt file in https://github.com/Wintermute0110/plugin.program.AEL for information about the latest release.</news>
 		</extension>
 	</addon>
-	<addon id="plugin.program.newsstand" name="NewsStand" provider-name="Sagrath" version="0.0.1-alpha">
+	<addon id="plugin.program.newsstand" name="NewsStand" provider-name="Sagrath" version="0.1.0">
 		<requires>
 			<import addon="xbmc.python" version="3.0.0"/>
 		</requires>
@@ -93,7 +93,7 @@
 			<description lang="zh_TW">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
 		</extension>
 	</addon>
-	<addon id="skin.mediacenter" name="Media Center" provider-name="Joao Sagrath" version="1.0.0">
+	<addon id="skin.mediacenter" name="Media Center" provider-name="Joao Sagrath" version="1.1.0">
 		<requires>
 			<import addon="xbmc.gui" version="5.15.0"/>
 		</requires>
