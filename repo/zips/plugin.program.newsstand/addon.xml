@@ -14,10 +14,8 @@
         <provides>executable</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <!-- <reuselanguageinvoker>false</reuselanguageinvoker> -->
-        <summary lang="en_GB"></summary>
-        <description lang="en_GB"></description>
-        <!-- <platform>android freebsd ios linux osx windows</platform> -->
+        <summary lang="en_GB">Build your library of magazines, comics, periodicals and other types of print publications.</summary>
+        <description lang="en_GB">With Newsstand you can have your magazine collection on Kodi, with a large database for the most diverse types of magazines. Use your favorite reader and customize all artwork and descriptions.</description>
         <platform>windows</platform>
         <license>GPL-2.0-only</license>
         <email></email>
