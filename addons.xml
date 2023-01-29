@@ -2,7 +2,7 @@
 <addons>
 	<addon id="plugin.program.advanced.emulator.launcher" name="Advanced Emulator Launcher" version="0.10.2" provider-name="Wintermute0110">
 		<requires>
-			<import addon="xbmc.python" version="3.0.0"/>
+			<import addon="xbmc.python" version="3.0.0" />
 		</requires>
 		<extension point="xbmc.python.pluginsource" library="addon.py">
 			<provides>executable game</provides>
@@ -28,7 +28,7 @@
 	</addon>
 	<addon id="plugin.program.newsstand" name="NewsStand" version="1.0.0" provider-name="Sagrath">
 		<requires>
-			<import addon="xbmc.python" version="3.0.0"/>
+			<import addon="xbmc.python" version="3.0.0" />
 		</requires>
 		<extension point="xbmc.python.pluginsource" library="addon.py">
 			<provides>executable</provides>
@@ -38,23 +38,23 @@
 			<description lang="en_GB">With Newsstand you can have your magazine collection on Kodi, with a large database for the most diverse types of magazines. Use your favorite reader and customize all artwork and descriptions.</description>
 			<platform>windows</platform>
 			<license>GPL-2.0-only</license>
-			<email/>
-			<forum/>
-			<website/>
-			<source/>
+			<email />
+			<forum />
+			<website />
+			<source />
 			<assets>
 				<icon>media/icon.png</icon>
 				<fanart>media/fanart.jpg</fanart>
-				<screenshot/>
-				<screenshot/>
-				<screenshot/>
+				<screenshot />
+				<screenshot />
+				<screenshot />
 			</assets>
-			<news/>
+			<news />
 		</extension>
 	</addon>
 	<addon id="plugin.program.starter" name="Starter" version="0.0.1" provider-name="sagrath">
 		<requires>
-			<import addon="xbmc.python" version="3.0.0"/>
+			<import addon="xbmc.python" version="3.0.0" />
 		</requires>
 		<extension point="xbmc.python.pluginsource" library="addon.py">
 			<provides>executable</provides>
@@ -64,25 +64,25 @@
 			<description lang="en_GB">Multi front-end and general application starter for Kodi.</description>
 			<platform>windows</platform>
 			<license>GPL-2.0-only</license>
-			<email/>
-			<forum/>
-			<website/>
-			<source/>
+			<email />
+			<forum />
+			<website />
+			<source />
 			<assets>
 				<icon>media/icon.png</icon>
 				<fanart>media/fanart.jpg</fanart>
-				<screenshot/>
+				<screenshot />
 			</assets>
 			<news>.</news>
 		</extension>
 	</addon>
 	<addon id="script.skinshortcuts" name="Skin Shortcuts" version="2.0.1" provider-name="BigNoid, marcelveldt, SiLVO">
 		<requires>
-			<import addon="xbmc.python" version="3.0.0"/>
-			<import addon="script.module.unidecode" version="1.1.1+matrix.2"/>
-			<import addon="script.module.simpleeval" version="0.9.10"/>
+			<import addon="xbmc.python" version="3.0.0" />
+			<import addon="script.module.unidecode" version="1.1.1+matrix.2" />
+			<import addon="script.module.simpleeval" version="0.9.10" />
 		</requires>
-		<extension point="xbmc.python.library" library="resources/lib/entry_point.py"/>
+		<extension point="xbmc.python.library" library="resources/lib/entry_point.py" />
 		<extension point="xbmc.addon.metadata">
 			<news>
 - restructured (no change to API)
@@ -139,29 +139,28 @@
 			<description lang="zh_TW">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
 		</extension>
 	</addon>
-	<addon id="script.song.autorating" name="Song Auto Rating" version="1.0.0" provider-name="Sagrath">
+	<addon id="script.song.autorating" name="Song Auto Rating" version="0.0.1" provider-name="Sagrath">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en" />
+  </extension>
+</addon><addon id="skin.mediacenter" version="1.1.1" name="Media Center" provider-name="Joao Sagrath">
 		<requires>
-			<import addon="xbmc.python" version="3.0.0"/>
-		</requires>
-		<extension point="xbmc.service" library="service.py"/>
-		<extension point="xbmc.addon.metadata">
-			<platform>all</platform>
-			<summary lang="en"/>
-		</extension>
-	</addon>
-	<addon id="skin.mediacenter" version="1.1.1" name="Media Center" provider-name="Joao Sagrath">
-		<requires>
-			<import addon="xbmc.gui" version="5.15.0"/>
+			<import addon="xbmc.gui" version="5.15.0" />
 		</requires>
 		<extension point="xbmc.gui.skin" debugging="false">
-			<res width="1920" height="1440" aspect="4:3" default="false" folder="xml"/>
-			<res width="1920" height="1280" aspect="3:2" default="false" folder="xml"/>
-			<res width="1920" height="1200" aspect="16:10" default="false" folder="xml"/>
-			<res width="2040" height="1080" aspect="17:9" default="false" folder="xml"/>
-			<res width="1920" height="1080" aspect="16:9" default="true" folder="xml"/>
-			<res width="2560" height="1080" aspect="21:9" default="false" folder="xml"/>
-			<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml"/>
-			<res width="2160" height="1080" aspect="18:9" default="false" folder="xml"/>
+			<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+			<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+			<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+			<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+			<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+			<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+			<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+			<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
 		</extension>
 		<extension point="xbmc.addon.metadata">
 			<summary lang="pt_BR">Skin MediaCenter (Estuary Mod - Skin Estuary por phil65 e Piers. (Skin padrão do Kodi))</summary>
