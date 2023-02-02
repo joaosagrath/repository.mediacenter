@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.steamgames" name="Steam Games" version="0.0.1" provider-name="Sagrath">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+		<import addon="script.module.requests" version="2.22.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>game executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Launcher Steam games from Kodi</summary>
+        <description lang="en_GB"></description>
+        <language></language>
+        <platform>windx</platform>
+        <license>unlicense</license>
+        <forum></forum>
+        <website></website>
+        <email>joaosagrath@hotmail.com</email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>media/icon.png</icon>
+            <fanart>media/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
