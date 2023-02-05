@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="Notification" help="">
+		<setting id="separator" type="lsep" label="Song Stopped or Skipped"/>
+		<setting label="Show notification when music gets new rating:" type="bool" id="show_notification" default="false"/>
+		<setting id="separator" type="lsep" label="Song is Playing"/>
+		<setting label="Show real-time notification when music gets new rating:" type="bool" id="real_show_notification" default="false"/>
+	</category>
+</settings>
+

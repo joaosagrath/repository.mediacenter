@@ -52,7 +52,16 @@
 			<news />
 		</extension>
 	</addon>
-	<addon id="plugin.program.starter" name="Starter" version="0.0.1" provider-name="sagrath">
+	<addon id="plugin.program.newsstand.album.maker" name="NewsStand Album Maker" version="1.0.0" provider-name="Sagrath">
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>picture</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addon Summary</summary>
+    <description lang="en">Addon Description</description>
+    <platform>all</platform>
+  </extension>
+</addon><addon id="plugin.program.starter" name="Starter" version="0.0.1" provider-name="sagrath">
 		<requires>
 			<import addon="xbmc.python" version="3.0.0" />
 		</requires>
@@ -165,43 +174,52 @@
 			<description lang="zh_TW">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
 		</extension>
 	</addon>
-	<addon id="script.song.autorating" name="Song Auto Rating" version="0.0.2" provider-name="Sagrath">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" />
-  </requires>
-  <extension point="xbmc.service" library="service.py" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en" />
-  </extension>
-</addon><addon id="skin.mediacenter" version="1.1.1" name="Media Center" provider-name="Joao Sagrath">
-		<requires>
-			<import addon="xbmc.gui" version="5.15.0" />
-		</requires>
-		<extension point="xbmc.gui.skin" debugging="false">
-			<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
-			<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
-			<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-			<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
-			<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-			<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
-			<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
-			<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary lang="pt_BR">Skin MediaCenter (Estuary Mod - Skin Estuary por phil65 e Piers. (Skin padrão do Kodi))</summary>
-			<description lang="pt_BR">A Media Center vem para trazer o melhor de cada item, valorizando as artes que cada conteúdo pode oferecer.</description>
-			<disclaimer lang="en_GB">disclaimer</disclaimer>
-			<platform>all</platform>
-			<license>GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-			<forum>http://forum.kodi.tv/**</forum>
-			<source>https://github.com/**</source>
-			<news>[B]Changelog[/B] v0.0.1 (01/02/201x) [new] INITIAL RELEASE [fix] some fix</news>
-			<assets>
-				<icon>resources/icon.png</icon>
-				<fanart>resources/fanart.jpg</fanart>
-				<screenshot>resources/screenshot-01.jpg</screenshot>
-			</assets>
-		</extension>
-	</addon>
-</addons>
+	<addon id="script.song.autorating" name="Song Auto Rating" version="0.0.3" provider-name="Sagrath">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en" />
+		<assets>
+			<icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+			<screenshot />
+		</assets>
+	</extension>
+</addon><addon id="skin.mediacenter" version="1.1.2" name="Media Center" provider-name="Joao Sagrath">
+	<requires>
+		
+		
+		
+		<import addon="xbmc.gui" version="5.15.0" />
+		
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="pt_BR">Skin MediaCenter (Estuary Mod - Skin Estuary por phil65 e Piers. (Skin padrão do Kodi))</summary>
+		<description lang="pt_BR">A Media Center vem para trazer o melhor de cada item, valorizando as artes que cada conteúdo pode oferecer.</description>
+		<disclaimer lang="en_GB">disclaimer</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<forum>http://forum.kodi.tv/**</forum>
+		<source>https://github.com/**</source>
+		<news>[B]Changelog[/B] v0.0.1 (01/02/201x) [new] INITIAL RELEASE [fix] some fix</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			
+		</assets>
+	</extension>
+</addon></addons>
