@@ -6,10 +6,13 @@
 	<extension point="xbmc.service" library="service.py"/>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en"/>
+		<summary lang="en">teste 123</summary>
+		<description lang="en_US">Service to rating your song as they be played</description>
+		<license>GPL-2.0-only</license>
 		<assets>
-			<icon>resources/media/icon.png</icon>
-            <fanart>resources/media/fanart.jpg</fanart>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			
 			<screenshot/>
 		</assets>
 	</extension>

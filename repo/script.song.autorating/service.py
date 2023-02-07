@@ -5,121 +5,114 @@ import time
 
 addon = xbmcaddon.Addon()
 addon_name = addon.getAddonInfo('name')
-
+addon_path = addon.getAddonInfo("path")
+imagxe = addon_path + "resources\icon.png"
 
 class Monitor(xbmc.Monitor):
     def __init__(self):
-        self.is_library_song = False        
+        self.is_library_song = False
         pass
-        
+
     def status_check(self):
         # perform monitor status check
         pass
-    
-    def onPlayBackStarted(self):        
+
+    def onPlayBackStarted(self):
+        # Music Library music is set to "True"
+        if start_notification == 'true':
+            xbmc.executebuiltin("Notification(%s, %s, time=2000)" % (addon_name, '{} Started'.format(song_title)))
         self.is_library_song = True
-    
-    # When the song ends, either by user action, or when the song is
-    # the last in the playlist and the "repeat" function is disabled.
-    def onPlayBackStopped(self, new_rating, current_time):
-        if self.is_library_song and current_time > 5:
-            # Saving the new rating as the song stops.
-            xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"AudioLibrary.SetSongDetails","params":{"songid": %d, "userrating":%d},"id":1}' % (song_id, new_rating))
-            if show_notification == 'true':
-                xbmc.executebuiltin("Notification(%s, %s)" % (addon_name, '{} rated to {}'.format(song_title, new_rating)))
-            current_song = ''
+
+    def onPlayBackStopped(self, current_song, song_id, new_rating):
+        # The song stops, the UserRating of the song is saved, then song ID is set to "0", 
+        # and currentMusic to "empty" again. Library music is set to "False"
+        if self.is_library_song and current_time > 5:            
+            if show_notification == 'true' and addon_running == 'true':
+                xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"AudioLibrary.SetSongDetails","params":{"songid": %d, "userrating":%d},"id":1}' % (song_id, new_rating))
+            xbmc.executebuiltin("Notification(%s, %s, time=2000)" % (addon_name, ' {} rating is {}'.format(song_title, new_rating)))
             self.is_library_song = False
 
-    def calculate_rating(self, new_rating, song_id, song_title, last_id):
-        if last_id !=0 and song_id != last_id:
-            xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"AudioLibrary.SetSongDetails","params":{"songid": %d, "userrating":%d},"id":1}' % (song_id, new_rating))
-        if show_notification == 'true':
-            if song_rating == 0:            
-                xbmc.executebuiltin("Notification(%s, %s, time=2000)" % (addon_name, '{} rated to {}'.format(song_title, new_rating)))
-            else: 
-                xbmc.executebuiltin("Notification(%s, %s, time=2000)" % (addon_name, '{} rated to {}'.format(song_title, new_rating)))
-        current_song = ''
-        last_id=song_id
-        
+
 monitor             = Monitor()
 player              = xbmc.Player()
-calculated_rating   = 0
-new_rating          = 0
-current_time        = 0
-total_time          = 0
-# Variables to check song skipping
-song_title          = ''
 current_song        = ''
-last_id             = ''
-show_notification   = ''
-real_show_notification   = ''
+new_rating          = 0
+current_id          = 0 #  Add to match current song tracking
+song_id             = 0 #  Add to match original song tracking
+
+
 
 while not monitor.abortRequested():
-    try:
-        while True:
-            if xbmc.Player().isPlayingAudio():
-                if addon.getSetting("show_notification") == 'true':
-                    show_notification = 'true' 
-                else:
-                    show_notification = 'false' 
+    # try:
+    while True:
+        if xbmc.Player().isPlayingAudio():
+            show_notification = 'true' if addon.getSetting("show_notification") == 'true' else 'false'
+            start_notification = 'true' if addon.getSetting("start_notification") == 'true' else 'false'
+            real_show_notification = 'true' if addon.getSetting("real_show_notification") == 'true' else 'false'
+            addon_running = 'true' if addon.getSetting("addon_running") == 'true' else 'false'
+            if addon_running == 'true':    
+                # Retrieve Song Data from the player
+                song_title = xbmc.getInfoLabel('MusicPlayer.Title')
+                song_rating     = xbmc.getInfoLabel('MusicPlayer.UserRating')
+                song_length     = int(xbmc.Player().getTotalTime())
+                current_time    = int(player.getTime())
+                song_parts      = int(song_length / 11)
+                song_time_left  = (song_length - current_time)
                 
-                if addon.getSetting("real_show_notification") == 'true':
-                    real_show_notification = 'true' 
+                # To to ensure UserRating is at least "0"
+                if song_rating == '':
+                    song_rating = 0    
                 else:
-                    real_show_notification = 'false' 
+                    song_rating = int(song_rating)
+                
+                # To avoid error "divided by zero"
+                if current_time > 0:
+                    calculated_rating = int(current_time / song_parts)                
+                    if song_rating == 0 or song_rating == '':
+                        new_rating = int(current_time/song_parts)
+                    if song_rating > 0:
+                        new_rating = int((song_rating + calculated_rating) / 2)
+                
+                if current_song == '':
+                    monitor.onPlayBackStarted()
                     
-                if not xbmc.getInfoLabel('MusicPlayer.Title') == '': 
-                    
-                    # Retrieve data from the currently playing song
-                    song_title      = xbmc.getInfoLabel('MusicPlayer.Title')
-                    song_rating     = xbmc.getInfoLabel('MusicPlayer.UserRating')
-                    song_length     = int(xbmc.Player().getTotalTime())
-                    current_time    = int(player.getTime())
-                    song_parts      = int(song_length / 11)
-                    
-                    if song_rating == '':
-                        song_rating = 0    
-                    else:
-                        song_rating = int(song_rating)
-                    
-                    if current_time > 0:
-                        calculated_rating = int(current_time / song_parts)                
-                        if song_rating == 0 or song_rating == '':
-                            new_rating = int(current_time/song_parts)
-                        if song_rating > 0:
-                            new_rating = int((song_rating + calculated_rating) / 2)
-                    
+                    # Retrieve Song Data as player start:
                     xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"JSONRPC.Introspect","id":1}')
                     result = xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"Player.GetItem","params":{"playerid":0,"properties":["userrating"]},"id":1}')
                     song_details = json.loads(result)["result"]["item"]
                     song_id = song_details["id"]
+                    current_id = xbmc.getInfoLabel('MusicPlayer.DBID')      #  Get database Id of new song
+                    
+                    # Set current song from player:
+                    current_song = xbmc.getInfoLabel('MusicPlayer.Title')
+                
+                # If song has changed, first will save current data in previous song,
+                # The will retrieve data for the new song:
+                if current_song != song_title:
+                    # Save Song Data in previous song:
+                    xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"AudioLibrary.SetSongDetails","params":{"songid": %d, "userrating":%d},"id":1}' % (song_id, new_rating))
+                    if show_notification == 'true':
+                        xbmc.executebuiltin("Notification(%s, %s, time=2000)" % (addon_name, ' {} rating is {}'.format(song_title, new_rating)))
+                    
+                    # Retrieve Song Data from new song:
+                    xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"JSONRPC.Introspect","id":1}')
+                    result = xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"Player.GetItem","params":{"playerid":0,"properties":["userrating"]},"id":1}')
+                    song_details = json.loads(result)["result"]["item"]
+                    song_id = song_details["id"]
+                    
+                    # Set new current song from player:
+                    current_song = xbmc.getInfoLabel('MusicPlayer.Title')
 
-                    if current_song == '':
-                        monitor.onPlayBackStarted()
-                        current_song = song_title                    
-                    
-                    song_time_left = (song_length - current_time)
-                    
-                    # Resting only two seconds before the song finish.
-                    if song_time_left <= 2:                
-                        monitor.calculate_rating(new_rating, song_id, song_title, last_id)
-                        current_song = xbmc.getInfoLabel('MusicPlayer.Title')
-                        
-                    # HERE NEED TO FIND A WAY TO SAVE THE NEW_RATING FROM LINE 66 OR 68
-                    # IN THE SKIPPED SONG, NOT IN THE NEXT SONG
-                    if song_time_left > 2 and current_song != song_title:                        
-                        xbmc.executebuiltin("Notification(%s, %s, time=2000)" % ('{}'.format(current_song), 'Song Skipped'))                        
-                        monitor.calculate_rating(new_rating, song_id, song_title, last_id)
-                        current_song = xbmc.getInfoLabel('MusicPlayer.Title')
-                    
-                    if real_show_notification == 'true':
-                        xbmc.executebuiltin("Notification(%s, %s, time=2000)" % (addon_name, '{} rated to {}'.format(song_title, new_rating)))                    
-            else:
-                monitor.onPlayBackStopped(new_rating, current_time)
+        else:
+            # For use when the user stops playback.
+            monitor.onPlayBackStopped(current_song, song_id, new_rating)
+            current_song = ''
+            current_id = song_id = 0
+            new_rating = 0
             
-            monitor.status_check()
-            
-            if monitor.waitForAbort(1): 
-                break                  
-    except Exception as e:
-        xbmc.executebuiltin("Notification(%s, %s)" % ("An error occurred: ", e))
+        monitor.status_check()
+
+        if monitor.waitForAbort(1):
+            break
+    # except Exception as e:
+        # xbmc.executebuiltin("Notification(%s, %s)" % ("An error occurred: ", e))
