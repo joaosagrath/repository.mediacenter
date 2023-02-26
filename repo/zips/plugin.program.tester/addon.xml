@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.tester" name="tester" version="0.0.1" provider-name="sagrath">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<!--
+            This must be commented when releasing the addon. Kodi must be restarted if this setting is changed.
+            See https://github.com/xbmc/xbmc/pull/13814
+        -->
+		<!-- <reuselanguageinvoker>false</reuselanguageinvoker> -->
+		<summary lang="en_GB">Start any windows programs from Kodi.</summary>
+		<description lang="en_GB">Multi front-end and general application starter for Kodi.</description>
+		<platform>windows</platform>
+		<license>GPL-2.0-only</license>
+		<email/>
+		<forum/>
+		<website/>
+		<source/>
+		<assets>
+			<icon>media/icon.png</icon>
+			<fanart>media/fanart.jpg</fanart>
+			<screenshot/>
+		</assets>
+		<news>.</news>
+	</extension>
+</addon>

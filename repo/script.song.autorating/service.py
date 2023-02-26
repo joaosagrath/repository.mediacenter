@@ -6,7 +6,6 @@ import time
 addon = xbmcaddon.Addon()
 addon_name = addon.getAddonInfo('name')
 addon_path = addon.getAddonInfo("path")
-imagxe = addon_path + "resources\icon.png"
 
 class Monitor(xbmc.Monitor):
     def __init__(self):
@@ -39,20 +38,24 @@ current_song        = ''
 new_rating          = 0
 current_id          = 0 #  Add to match current song tracking
 song_id             = 0 #  Add to match original song tracking
-
-
+song_DBID           = ''
 
 while not monitor.abortRequested():
     # try:
     while True:
         if xbmc.Player().isPlayingAudio():
+            #  Variables to check if Notifications are ON/OF
             show_notification = 'true' if addon.getSetting("show_notification") == 'true' else 'false'
             start_notification = 'true' if addon.getSetting("start_notification") == 'true' else 'false'
             real_show_notification = 'true' if addon.getSetting("real_show_notification") == 'true' else 'false'
+            # Variable to ON/OFF Auto Ratings.
             addon_running = 'true' if addon.getSetting("addon_running") == 'true' else 'false'
-            if addon_running == 'true':    
+            # To check if Kodi is playing a song that is in the library
+            song_DBID = xbmc.getInfoLabel('MusicPlayer.DBID') 
+            
+            if addon_running == 'true' and song_DBID != '':    
                 # Retrieve Song Data from the player
-                song_title = xbmc.getInfoLabel('MusicPlayer.Title')
+                song_title      = xbmc.getInfoLabel('MusicPlayer.Title')
                 song_rating     = xbmc.getInfoLabel('MusicPlayer.UserRating')
                 song_length     = int(xbmc.Player().getTotalTime())
                 current_time    = int(player.getTime())
@@ -70,9 +73,13 @@ while not monitor.abortRequested():
                     calculated_rating = int(current_time / song_parts)                
                     if song_rating == 0 or song_rating == '':
                         new_rating = int(current_time/song_parts)
+                        if new_rating > 10:
+                            new_rating = 10
                     if song_rating > 0:
                         new_rating = int((song_rating + calculated_rating) / 2)
-                
+                        if new_rating > 10:
+                            new_rating = 10
+                            
                 if current_song == '':
                     monitor.onPlayBackStarted()
                     
@@ -102,12 +109,17 @@ while not monitor.abortRequested():
                     
                     # Set new current song from player:
                     current_song = xbmc.getInfoLabel('MusicPlayer.Title')
+                
+                # Show Real Time Rating
+                if real_show_notification == 'true':
+                    xbmc.executebuiltin("Notification(%s, %s, time=2000)" % (addon_name, ' {} rating is {}'.format(song_title, new_rating)))
 
         else:
             # For use when the user stops playback.
             monitor.onPlayBackStopped(current_song, song_id, new_rating)
             current_song = ''
-            current_id = song_id = 0
+            if song_DBID != '':
+                current_id = song_id = 0
             new_rating = 0
             
         monitor.status_check()

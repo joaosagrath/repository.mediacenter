@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher version="1">
+<control>
+  <update_timestamp>1677246961.6887467</update_timestamp>
+</control>
+<category>
+  <id>Albuns</id>
+  <m_title>Albuns</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot>Add your photo albums, collection of stickers, collection of images in general.</m_plot>
+  <finished>False</finished>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <Asset_Prefix />
+  <s_icon>defaultaddonimages.png</s_icon>
+  <s_fanart>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\_Fanart.jpg</s_fanart>
+  <s_banner>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\Albuns_banner.png</s_banner>
+  <s_poster>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\Albuns_poster.png</s_poster>
+  <s_clearlogo>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\Albuns_clearlogo.png</s_clearlogo>
+  <s_trailer />
+</category>
+<category>
+  <id>Comics</id>
+  <m_title>Comics</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot>Comics Plot.</m_plot>
+  <finished>False</finished>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <Asset_Prefix />
+  <s_icon>defaultaddonlanguage.png</s_icon>
+  <s_fanart>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\_Fanart.jpg</s_fanart>
+  <s_banner>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\Comics_banner.png</s_banner>
+  <s_poster>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\Comics_poster.png</s_poster>
+  <s_clearlogo>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\Comics_clearlogo.png</s_clearlogo>
+  <s_trailer />
+</category>
+<category>
+  <id>Magazines</id>
+  <m_title>Magazines</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot>Magazines Plot.</m_plot>
+  <finished>False</finished>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <Asset_Prefix />
+  <s_icon>defaultfile.png</s_icon>
+  <s_fanart>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\_Fanart.jpg</s_fanart>
+  <s_banner>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\Magazines_banner.png</s_banner>
+  <s_poster>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\Magazines_poster.png</s_poster>
+  <s_clearlogo>special://xbmc/portable_data\addons\plugin.program.newsstand\media\theme\Magazines_clearlogo.png</s_clearlogo>
+  <s_trailer />
+</category>
+<launcher>
+  <id>18Eighteen</id>
+  <m_title>18Eighteen</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\18Eighteen\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_18Eighteen</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>4</num_roms>
+  <timestamp_launcher>1676320987.9260745</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\18Eighteen\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\18Eighteen\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\18Eighteen\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\18Eighteen\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\18Eighteen\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>ATKingdom</id>
+  <m_title>ATKingdom</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\ATKingdom\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_ATKingdom</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>119</num_roms>
+  <timestamp_launcher>1677246961.658725</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\ATKingdom\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\ATKingdom\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\ATKingdom\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\ATKingdom\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\ATKingdom\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>AllOver30</id>
+  <m_title>AllOver30</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\AllOver30\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_AllOver30</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>10</num_roms>
+  <timestamp_launcher>1670418445.9092429</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\AllOver30\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\AllOver30\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\AllOver30\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\AllOver30\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\AllOver30\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>AmourAngels</id>
+  <m_title>AmourAngels</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\AmourAngels\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_AmourAngels</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>76</num_roms>
+  <timestamp_launcher>1676289303.5576408</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\AmourAngels\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\AmourAngels\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\AmourAngels\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\AmourAngels\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\AmourAngels\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>EroticBeauty</id>
+  <m_title>EroticBeauty</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\EroticBeauty\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_EroticBeauty</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>9</num_roms>
+  <timestamp_launcher>1676406289.3248837</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\EroticBeauty\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\EroticBeauty\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\EroticBeauty\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\EroticBeauty\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\EroticBeauty\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>Exported</id>
+  <m_title>Exported</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Artwork\Exported\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_Exported</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>6</num_roms>
+  <timestamp_launcher>1671137247.064877</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon />
+  <s_fanart />
+  <s_banner />
+  <s_poster />
+  <s_clearlogo />
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>GirlsDelta</id>
+  <m_title>GirlsDelta</m_title>
+  <m_year>2009</m_year>
+  <m_genre>Asian Shaved Pussies</m_genre>
+  <m_magazine>GirlsDelta.com</m_magazine>
+  <m_rating>10</m_rating>
+  <m_plot>Welcome to Girls DELTA&#13;&#10;&quot;Girls Delta&quot; is a site specializing in uncensored shaved pussy videos that offers the ultimate beauty of shaved pussy.</m_plot>
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\GirlsDelta\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_GirlsDelta</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>72</num_roms>
+  <timestamp_launcher>1676295126.0974517</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\GirlsDelta\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\GirlsDelta\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\GirlsDelta\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\GirlsDelta\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\GirlsDelta\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>Gravure</id>
+  <m_title>Gravure</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\Gravure\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_Gravure</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>29</num_roms>
+  <timestamp_launcher>1674571434.0704873</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\Gravure\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\Gravure\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\Gravure\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\Gravure\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\Gravure\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>MetArt</id>
+  <m_title>MetArt</m_title>
+  <m_year>1999</m_year>
+  <m_genre>High Class Nude Girls</m_genre>
+  <m_magazine>MetArt Network</m_magazine>
+  <m_rating>10</m_rating>
+  <m_plot>The world&apos;s largest community of artistic nude and erotic photography. Find the most beautiful, sexy and natural girls in nude modeling.</m_plot>
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\MetArt\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_MetArt</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>150</num_roms>
+  <timestamp_launcher>1677092741.4363275</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\MetArt\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\MetArt\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\MetArt\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\MetArt\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\MetArt\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>PlumperPass</id>
+  <m_title>PlumperPass</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\PlumperPass\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_PlumperPass</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>13</num_roms>
+  <timestamp_launcher>1676556966.6881843</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\PlumperPass\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\PlumperPass\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\PlumperPass\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\PlumperPass\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\PlumperPass\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>Scoreland</id>
+  <m_title>Scoreland</m_title>
+  <m_year>1992</m_year>
+  <m_genre>Big Boobs</m_genre>
+  <m_magazine>TheScoreGroup</m_magazine>
+  <m_rating>10</m_rating>
+  <m_plot>#1 in Big Boobs since 1992[CR]Welcome to Scoreland: #1 in Big Boobs! Big tit videos and photos of the world&apos;s biggest tits.</m_plot>
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\Scoreland\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_Scoreland</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>55</num_roms>
+  <timestamp_launcher>1676556870.8201232</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\Scoreland\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\Scoreland\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\Scoreland\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\Scoreland\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\Scoreland\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>ShowyBeauty</id>
+  <m_title>ShowyBeauty</m_title>
+  <m_year>2011</m_year>
+  <m_genre>Nude Teens</m_genre>
+  <m_magazine>ShowyBeauty.com</m_magazine>
+  <m_rating>10</m_rating>
+  <m_plot>Why choose between mind-blowing curves, unique, radiant personalities and impeccable quality erotic photos and videos when you can have them all? Showy Beauty is your chance to experience frisky, blooming femininity up close, closer than any time before. We feature exclusive girls with supermodel looks yet totally undiscovered - until now. Our vision of sensual femininity only gets better as we add more hi-class photographers!</m_plot>
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\ShowyBeauty\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_ShowyBeauty</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>52</num_roms>
+  <timestamp_launcher>1674571453.8735592</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\ShowyBeauty\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\ShowyBeauty\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\ShowyBeauty\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\ShowyBeauty\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\ShowyBeauty\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>TeenMarvel</id>
+  <m_title>TeenMarvel</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\TeenMarvel\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_TeenMarvel</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>32</num_roms>
+  <timestamp_launcher>1670586416.987129</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\TeenMarvel\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\TeenMarvel\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\TeenMarvel\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\TeenMarvel\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\TeenMarvel\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>Watch4Beauty</id>
+  <m_title>Watch4Beauty</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\Watch4Beauty\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_Watch4Beauty</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>24</num_roms>
+  <timestamp_launcher>1676125986.3071299</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\Watch4Beauty\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\Watch4Beauty\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\Watch4Beauty\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\Watch4Beauty\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\Watch4Beauty\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>XLGirls</id>
+  <m_title>XLGirls</m_title>
+  <m_year>1991</m_year>
+  <m_genre>BBW Girls</m_genre>
+  <m_magazine>TheScoreGroup</m_magazine>
+  <m_rating>10</m_rating>
+  <m_plot>Voluptuous and XL Girls magazines: Super size models with tremendous tits, hefty hips, and chubby cheeks. 100% XXX super sex with the best BBWs on the planet. More plump women than ever.</m_plot>
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\XLGirls\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_XLGirls</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>105</num_roms>
+  <timestamp_launcher>1676317817.3062782</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\XLGirls\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\XLGirls\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\XLGirls\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\XLGirls\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\XLGirls\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+<launcher>
+  <id>YoungFatties</id>
+  <m_title>YoungFatties</m_title>
+  <m_year />
+  <m_genre />
+  <m_magazine />
+  <m_rating />
+  <m_plot />
+  <platform />
+  <categoryID>Albuns</categoryID>
+  <application>magazine_folder_app</application>
+  <args>$rom$</args>
+  <rompath>Y:\Girls\YoungFatties\</rompath>
+  <romext>issue</romext>
+  <finished>False</finished>
+  <toggle_window>False</toggle_window>
+  <non_blocking>False</non_blocking>
+  <multidisc>True</multidisc>
+  <roms_base_noext>roms_Albuns_YoungFatties</roms_base_noext>
+  <launcher_display_mode>Flat mode</launcher_display_mode>
+  <num_roms>25</num_roms>
+  <timestamp_launcher>1676556918.0517886</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_icon>s_icon</default_icon>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_poster</default_poster>
+  <default_clearlogo>s_clearlogo</default_clearlogo>
+  <s_icon>Y:\Girls\YoungFatties\boxfront.jpg</s_icon>
+  <s_fanart>Y:\Girls\YoungFatties\fanart.jpg</s_fanart>
+  <s_banner>Y:\Girls\YoungFatties\banner.jpg</s_banner>
+  <s_poster>Y:\Girls\YoungFatties\folder.jpg</s_poster>
+  <s_clearlogo>Y:\Girls\YoungFatties\clearlogo.png</s_clearlogo>
+  <roms_default_icon>s_boxfront</roms_default_icon>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+</launcher>
+</advanced_emulator_launcher>

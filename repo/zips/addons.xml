@@ -111,6 +111,31 @@
             <fanart>media/fanart.jpg</fanart>
         </assets>
     </extension>
+</addon><addon id="plugin.program.tester" name="tester" version="0.0.1" provider-name="sagrath">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		
+		
+		<summary lang="en_GB">Start any windows programs from Kodi.</summary>
+		<description lang="en_GB">Multi front-end and general application starter for Kodi.</description>
+		<platform>windows</platform>
+		<license>GPL-2.0-only</license>
+		<email />
+		<forum />
+		<website />
+		<source />
+		<assets>
+			<icon>media/icon.png</icon>
+			<fanart>media/fanart.jpg</fanart>
+			<screenshot />
+		</assets>
+		<news>.</news>
+	</extension>
 </addon><addon id="script.skinshortcuts" name="Skin Shortcuts" version="2.0.1" provider-name="BigNoid, marcelveldt, SiLVO">
 		<requires>
 			<import addon="xbmc.python" version="3.0.0" />
