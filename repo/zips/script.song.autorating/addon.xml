@@ -4,12 +4,26 @@
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
 	<extension point="xbmc.service" library="service.py"/>
+	<extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="addon_settings.py">
+                <label>Song Auto Rating Settings</label>
+                <visible>true</visible>
+            </item>
+			<item library="ratealbuns.py">
+                <label>Rate this Album</label>
+                <visible>true</visible>
+            </item>
+        </menu>
+    </extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en"/>
+		<summary lang="en">teste 123</summary>
+		<description lang="en_US">Service to rating your song as they be played</description>
+		<license>GPL-2.0-only</license>
 		<assets>
-			<icon>resources/media/icon.png</icon>
-            <fanart>resources/media/fanart.jpg</fanart>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
 			<screenshot/>
 		</assets>
 	</extension>
