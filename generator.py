@@ -11,7 +11,7 @@ import zipfile
 from xml.etree import ElementTree
 
 SCRIPT_VERSION = 2
-KODI_VERSIONS = ["krypton", "leia", "matrix", "repo"]
+KODI_VERSIONS = ["krypton", "leia", "matrix", "nexusrepo", "omega", "repo"]
 IGNORE = [
     ".git",
     ".github",
@@ -312,7 +312,7 @@ class Generator:
                 )
             )
 
-
 if __name__ == "__main__":
     for release in [r for r in KODI_VERSIONS if os.path.exists(r)]:
+        print(release)
         Generator(release)
