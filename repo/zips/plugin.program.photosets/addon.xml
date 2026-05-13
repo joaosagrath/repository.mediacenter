@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.photosets" name="Photo Sets" version="1.0.0" provider-name="JoaoSagrath">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+		
+		<language>resource.language.en_gb</language>
+		<language>resource.language.pt_br</language>
+        
+		<summary language="en">Um addon simples para Kodi</summary>
+        <description language="en">Este é um addon de exemplo para Kodi Matrix</description>
+        <platform>all</platform>
+        <assets>
+            <icon>media/icon.png</icon>
+            <fanart>media/fanart.jpg</fanart>
+            <screenshot></screenshot>
+            <screenshot></screenshot>
+            <screenshot></screenshot>
+        </assets>
+    </extension>
+</addon>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.mediacenter" name="Media Center Repository" version="1.0" provider-name="joaosagrath">
+<addon id="repository.mediacenter" name="Media Center Repository" version="2.0" provider-name="joaosagrath">
     <extension point="xbmc.addon.repository" name="Media Center Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/joaosagrath/repository.mediacenter/master/addons.xml</info>
