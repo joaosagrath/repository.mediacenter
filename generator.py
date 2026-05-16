@@ -21,6 +21,9 @@ IGNORE = [
     ".idea",
     "venv",
 ]
+EXCLUDED_ADDONS = {
+    "plugin.program.photololitas",
+}
 
 
 def _setup_colors():
@@ -228,12 +231,28 @@ class Generator:
             for i in os.listdir(self.release_path)
             if os.path.isdir(os.path.join(self.release_path, i))
             and i != "zips"
+            and i not in EXCLUDED_ADDONS
             and not i.startswith(".")
             and os.path.exists(os.path.join(self.release_path, i, "addon.xml"))
         ]
 
         addon_xpath = "addon[@id='{}']"
         changed = False
+        for addon_id in EXCLUDED_ADDONS:
+            addon_entry = addons_root.find(addon_xpath.format(addon_id))
+            if addon_entry is not None:
+                addons_root.remove(addon_entry)
+                changed = True
+
+            excluded_zip_folder = os.path.join(self.zips_path, addon_id)
+            if os.path.exists(excluded_zip_folder):
+                shutil.rmtree(excluded_zip_folder)
+                print(
+                    "Removed excluded addon folder: {}".format(
+                        color_text(excluded_zip_folder, 'yellow')
+                    )
+                )
+
         for addon in folders:
             try:
                 addon_xml_path = os.path.join(self.release_path, addon, "addon.xml")
