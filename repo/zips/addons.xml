@@ -32,11 +32,13 @@
 				- Rewrote the README for general audiences with clearer addon description, features, setup overview, and benefits.
         </news>
     </extension>
-</addon><addon id="plugin.program.photosets" name="Photo Sets" version="1.0.0" provider-name="JoaoSagrath">
+</addon><addon id="plugin.program.photosets" name="Photo Sets" version="2.0.0" provider-name="JoaoSagrath">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
+	
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>executable</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -44,8 +46,10 @@
 		<language>resource.language.en_gb</language>
 		<language>resource.language.pt_br</language>
         
-		<summary language="en">Um addon simples para Kodi</summary>
-        <description language="en">Este é um addon de exemplo para Kodi Matrix</description>
+			<summary lang="en_GB">A simple Kodi addon</summary>
+			<summary lang="pt_BR">Um addon simples para Kodi</summary>
+	        <description lang="en_GB">This is a sample addon for Kodi Matrix</description>
+	        <description lang="pt_BR">Este é um addon de exemplo para Kodi Matrix</description>
         <platform>all</platform>
         <assets>
             <icon>media/icon.png</icon>
