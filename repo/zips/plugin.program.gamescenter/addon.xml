@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.program.gamescenter"
        name="Games Center"
-       version="2.0.4"
+       version="2.0.5"
        provider-name="Sagrath">
 
     <requires>
@@ -31,8 +31,10 @@
         <email></email>
         <source></source>
         <news>
-				2.0.4 (2026-03-23)
-				- Rewrote the README for general audiences with clearer addon description, features, setup overview, and benefits.
+					2.0.5 (2026-06-05)
+					- SteamGridDB artwork listings now page through all available results and can optionally include NSFW artwork via addon settings.
+					2.0.4 (2026-03-23)
+					- Rewrote the README for general audiences with clearer addon description, features, setup overview, and benefits.
         </news>
     </extension>
 </addon>
